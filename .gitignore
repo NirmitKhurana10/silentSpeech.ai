@@ -1,0 +1,13 @@
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore model and large data
+*.h5
+*.mp4
+*.wav
+*.dylib
+*.so
+
+# System files
+.DS_Store
