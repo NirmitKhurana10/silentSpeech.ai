@@ -42,7 +42,7 @@ def serve_video(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 # Route to transcribe video
-@app.route('/transcribe', methods=['GET'])
+@app.route('/transcribe', methods=['POST'])
 def transcribe():
     if not latest_video_path:
         return jsonify({'transcription': "No video uploaded."}), 400
